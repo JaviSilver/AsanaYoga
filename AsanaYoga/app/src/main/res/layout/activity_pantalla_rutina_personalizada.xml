@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaRutinaPersonalizada">
+
+    <TextView
+        android:id="@+id/tituloRutina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Título de la Rutina"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaAsanas"
+        android:layout_width="374dp"
+        android:layout_height="468dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:paddingTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloRutina" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="181dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="32dp"
+        style="@style/ButtonTheme"
+        android:text="Eliminar Rutina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaAsanas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

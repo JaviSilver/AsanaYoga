@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaBusqueda"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="26dp">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/barraBusquedaAvanzada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="36dp"
+        android:queryHint="Buscar Asanas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/parteCuerpoLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Parte del Cuerpo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/parteCuerpoSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/difficultadSpinner" />
+
+    <Spinner
+        android:id="@+id/tipoSpinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tipoLabel" />
+
+    <TextView
+        android:id="@+id/dificultadLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:text="Nivel de Dificultad"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/difficultadSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tipoSpinner" />
+
+    <Spinner
+        android:id="@+id/parteCuerpoSpinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parteCuerpoLabel" />
+
+    <Spinner
+        android:id="@+id/difficultadSpinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dificultadLabel" />
+
+    <TextView
+        android:id="@+id/tipoLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="Tipo de Asana"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraBusquedaAvanzada" />
+
+
+    <Button
+        android:id="@+id/aplicarFiltroButton"
+        android:layout_width="191dp"
+        android:layout_height="54dp"
+        style="@style/ButtonTheme"
+        android:layout_marginTop="28dp"
+        android:text="Aplicar Filtros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parteCuerpoSpinner" />
+
+    <Button
+        android:id="@+id/btnRanking"
+        android:layout_width="191dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="204dp"
+        style="@style/ButtonTheme"
+        android:layout_marginTop="28dp"
+        android:text="Mostrar Ranking de posturas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/parteCuerpoSpinner" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaBusquedaAvanzada"
+        android:layout_width="402dp"
+        android:layout_height="273dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aplicarFiltroButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

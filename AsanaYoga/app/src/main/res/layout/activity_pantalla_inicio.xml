@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaInicio">
+
+
+  <androidx.appcompat.widget.SearchView
+      android:id="@+id/barraBusquedaAvanzada"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:layout_marginTop="16dp"
+      android:iconifiedByDefault="false"
+      android:queryHint="Buscar asanas..."
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/listaBusquedaAvanzada"
+      android:layout_width="392dp"
+      android:layout_height="491dp"
+      app:layout_constraintBottom_toTopOf="@id/menuPantallaPrincipal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.473"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/barraBusquedaAvanzada"
+      app:layout_constraintVertical_bias="0.097" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/btnAgregarAsana"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      style="@style/ButtonTheme"
+      android:contentDescription="Agregar Asana"
+      android:src="@drawable/ic_add_foreground"
+      app:layout_constraintBottom_toTopOf="@+id/menuPantallaPrincipal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/listaBusquedaAvanzada" />
+
+
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/menuPantallaPrincipal"
+      android:layout_width="413dp"
+      android:layout_height="73dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

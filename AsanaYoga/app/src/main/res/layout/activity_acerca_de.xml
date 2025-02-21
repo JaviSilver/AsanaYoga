@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AcercaDe">
+
+    <ImageView
+        android:id="@+id/logo_asana_yoga"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Logo AsanaYoga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_asanayoga" />
+
+    <TextView
+        android:id="@+id/title_acerca_de"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="AsanaYoga"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo_asana_yoga"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/version_acerca_de"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Versión 1.0"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo_asana_yoga"
+        app:layout_constraintTop_toBottomOf="@id/title_acerca_de" />
+
+    <TextView
+        android:id="@+id/label_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Autor:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/version_acerca_de" />
+
+    <TextView
+        android:id="@+id/texto_autor"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:text="Javier Mesonero Moro"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_autor" />
+
+    <TextView
+        android:id="@+id/label_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_autor" />
+
+    <TextView
+        android:id="@+id/texto_email"
+        android:layout_width="259dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:text="javier.mesmor@educa.jcyl.es"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_email" />
+
+    <TextView
+        android:id="@+id/texto_acerca_de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="Aplicación realizada como motivo del Proyecto Final del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Multiplataforma"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_email" />
+
+    <ImageView
+        android:id="@+id/logo_escuela"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="280dp"
+        android:contentDescription="Logo Escuela"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_escuela" />
+
+    <TextView
+        android:id="@+id/titulo_agradecimientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Agradecimientos:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto_acerca_de" />
+
+    <ScrollView
+        android:id="@+id/scrollTexto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_agradecimientos"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textoAgradecimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:scrollbars="vertical"
+            android:text="Quisiera expresar mi más sincero agradecimiento a la Escuela de Yoga Sharanam por brindarme los conocimientos profundos y necesarios sobre las asanas y, en general, sobre el mundo del yoga. A través de su enfoque integral y la dedicación de sus enseñantes, pude adentrarme en este hermoso camino que transforma el cuerpo, la mente y el alma.\n\nUn agradecimiento especial a nuestras queridas y sabias profesoras de yoga: Blanca, Anabel y Maribel, quienes no solo nos enseñaron las posturas físicas, sino que nos transmitieron enseñanzas mucho más profundas sobre el valor del alma. Ellas nos hablaron de 'el alma', ese algo dentro de cada uno de nosotros que nunca cambia, que permanece intacto a pesar de las transformaciones y los cambios constantes que experimentamos en nuestra vida. Ese 'algo' es lo que realmente somos, nuestra esencia más pura. Y es precisamente por ello que debemos aprender a conectar con ella, a mantenerla presente en nuestro día a día.\n\nEste es el motivo por el cual el lema de la escuela es tan significativo: 'La unión consciente con la esencia de uno mismo'. Un mensaje que refleja la importancia de ser fiel a lo que somos en el fondo, de reconocer nuestra verdadera esencia y cultivar esa conexión profunda con nuestro ser interior. Gracias a este aprendizaje, no solo hemos mejorado físicamente, sino que hemos crecido espiritualmente, aprendiendo a vivir con mayor conciencia y armonía.\n"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

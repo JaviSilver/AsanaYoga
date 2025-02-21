@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.AsanaYoga" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Fondo blanco para toda la aplicación -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:colorBackground">@android:color/white</item>
+
+        <!-- Color de texto por defecto -->
+        <item name="android:textColorPrimary">@color/colorSharanam</item>
+        <item name="android:textColorSecondary">@color/colorSharanam</item>
+
+        <!-- Personalización de la barra de estado y navegación -->
+        <item name="android:statusBarColor">@color/colorSharanam</item> <!-- Barra de estado morada -->
+        <item name="android:navigationBarColor">@color/colorSharanam</item> <!-- Barra de navegación morada -->
+    </style>
+
+    <!-- Tema principal de la aplicación -->
+    <style name="Theme.AsanaYoga" parent="Base.Theme.AsanaYoga">
+
+        <!-- Definir el color de los botones -->
+        <item name="android:buttonStyle">@style/ButtonTheme</item>
+
+    </style>
+
+    <!-- Estilo para los botones (fondo morado y texto morado) -->
+    <style name="ButtonTheme" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorSharanam</item> <!-- Fondo morado -->
+        <item name="android:textColor">@android:color/white</item> <!-- Texto blanco -->
+    </style>
+
+</resources>

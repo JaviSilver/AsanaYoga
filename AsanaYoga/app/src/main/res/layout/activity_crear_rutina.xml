@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearRutina">
+
+    <TextView
+        android:id="@+id/tituloCrearRutina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Crear Rutina"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/nombreRutinaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la Rutina:"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloCrearRutina"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nombreRutina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Escribe el nombre aquí"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombreRutinaTitulo" />
+
+    <AutoCompleteTextView
+        android:id="@+id/buscadorAsanasRutina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Buscar asanas"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/nombreRutina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloAsanasDisponibles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asanas Disponibles"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/buscadorAsanasRutina"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaAsanasDisponibles"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloAsanasDisponibles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloAsanasActuales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rutina Actual"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/listaAsanasDisponibles"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaAsanasActuales"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloAsanasActuales"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardarRutina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Rutina"
+        android:layout_margin="16dp"
+        style="@style/ButtonTheme"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/listaAsanasActuales"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnBorrarRutina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_margin="16dp"
+        style="@style/ButtonTheme"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardarRutina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
