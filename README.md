@@ -9,7 +9,6 @@
 - 🧘‍♂️ **Listado de asanas**: Incluye descripciones, beneficios e imágenes ilustrativas.  
 - 🔍 **Búsqueda avanzada**: Filtrado por nivel, grupo muscular o tipo de práctica.  
 - 📊 **Recomendaciones inteligentes**: Sugerencia de secuencias según perfil del usuario (beta).  
-- ⚙️ **API Rest / CLI**: Según el alcance, permite interacción programática.
 
 ---
 
@@ -20,7 +19,7 @@
 ```bash
 git clone https://github.com/JaviSilver/AsanaYoga.git
 cd AsanaYoga
-
+````
 
 ---
 
