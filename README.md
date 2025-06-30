@@ -51,9 +51,8 @@ Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para
 
 ### 📌 Ideas futuras
 
-- 🧠 Integración de IA para generar secuencias personalizadas.  
+- 🧠 Integración de IA para generar secuencias personalizadas y de apis.  
 - 🌐 Soporte multilenguaje (inglés, español, etc.).  
-- 📦 Publicación en npm / PyPI.  
 - 📱 Extensión en app móvil Flutter/React Native.
 
 ---
